@@ -12,7 +12,7 @@ export default function Home() {
           content="Bringing healthcare billing power back to patience"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Work"
+          href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
