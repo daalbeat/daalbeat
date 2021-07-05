@@ -11,10 +11,8 @@ export default function Home() {
           name="description"
           content="Bringing healthcare billing power back to patience"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Work"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
