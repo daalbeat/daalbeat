@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Daal Beat</title>
+        <title>DaalBeat</title>
         <meta
           name="description"
           content="Bringing healthcare billing power back to patience"
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Daal Beat</h1>
+        <h1 className={styles.title}>DaalBeat</h1>
         <p className="text-xl text-gray-500">
           Bringing healthcare billing power back to patience.
         </p>
