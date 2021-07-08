@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/imagejjkjjjjjjjjjjj";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         <title>DaalBeat</title>
         <meta
           name="description"
-          content="Bringing healthcare billing power back to patience"
+          content="Healthcare Pricing Transparency made easy."
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
