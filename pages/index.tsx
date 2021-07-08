@@ -21,7 +21,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className="font-work text-5xl font-extrabold">DaalBeat</h1>
         <p className="font-work text-lg text-gray-500">
-          Bringing healthcare billing power back to patience.
+          Healthcare Pricing Transparency
         </p>
       </main>
     </div>
