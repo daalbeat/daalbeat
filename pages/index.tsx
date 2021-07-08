@@ -23,7 +23,6 @@ export default function Home() {
           )}
           {session && (
             <>
-              Signed in as {session.user.email} <br />
               <button onClick={() => signOut()}>Sign Out</button>
             </>
           )}
