@@ -7,7 +7,7 @@ const Layout = ({ children }: any) => {
         <title>DaalBeat</title>
         <meta
           name="description"
-          content="DaalBeat gives easy access to complicated healthcare pricing."
+          content="Healthcare pricing transparent and simplified."
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
