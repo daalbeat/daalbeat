@@ -10,7 +10,7 @@ export default function Home() {
           DaalBeat
         </h1>
         <p className="font-work text-lg text-gray-500 text-center">
-          Healthcare Pricing Transparency
+          Healthcare pricing transparent and simplified.
         </p>
       </main>
     </div>
