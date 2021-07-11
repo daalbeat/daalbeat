@@ -21,7 +21,7 @@ export default function Home() {
             </RoughNotation>
             <span className="ml-2 mr-3">and</span>
             <RoughNotation type="box" show={true} color="#ff0000">
-              transparent
+              simplified
             </RoughNotation>
           </RoughNotationGroup>
         </p>
