@@ -12,21 +12,9 @@ export default function Home() {
         <h1 className="font-work text-5xl font-extrabold text-center">
           DaalBeat
         </h1>
-        <p className="font-work text-lg text-gray-500 text-center">
+        <p className="font-work text-lg text-gray-500 text-center mb-10">
           Healthcare pricing transparent and simplified.
         </p>
-        <div className="mt-10 text-center">
-          {!session && (
-            <>
-              <button onClick={() => signIn()}>Sign In</button>
-            </>
-          )}
-          {session && (
-            <>
-              <button onClick={() => signOut()}>Sign Out</button>
-            </>
-          )}
-        </div>
       </main>
     </div>
   );
