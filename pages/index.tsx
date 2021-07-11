@@ -16,21 +16,11 @@ export default function Home() {
         <p className="font-work text-lg text-gray-500 text-center mb-10 mt-5">
           <span className="mr-3">Healthcare pricing</span>
           <RoughNotationGroup>
-            <RoughNotation
-              type="highlight"
-              show={true}
-              color="#ffd54f"
-              className="mt-5"
-            >
+            <RoughNotation type="highlight" show={true} color="#ffd54f">
               transparent
             </RoughNotation>
             <span className="ml-2 mr-3">and</span>
-            <RoughNotation
-              type="box"
-              show={true}
-              color="#ff0000"
-              className="mt-5"
-            >
+            <RoughNotation type="box" show={true} color="#ff0000">
               transparent
             </RoughNotation>
           </RoughNotationGroup>
