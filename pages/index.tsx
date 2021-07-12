@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center min-h-screen">
       <div className="text-center mx-auto">
-        <span className="font-work text-5xl font-extrabold">DaalBeat</span>
+        <span className="text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work text-5xl font-extrabold">
+          DaalBeat
+        </span>
         <p className="font-work text-lg text-gray-500 text-center mt-3">
           <span className="mr-2">Healthcare pricing</span>
           <RoughNotationGroup show={true}>
