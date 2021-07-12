@@ -20,7 +20,7 @@ export default function Home() {
               type="underline"
               show={true}
               color="#1e003d"
-              strokeWidth="3"
+              strokeWidth={3}
             >
               transparent
             </RoughNotation>
@@ -29,7 +29,7 @@ export default function Home() {
               type="underline"
               show={true}
               color="#1e003d"
-              strokeWidth="3"
+              strokeWidth={3}
             >
               simplified
             </RoughNotation>
