@@ -14,7 +14,7 @@ export default function Home() {
           <RoughNotationGroup show={true}>
             <RoughNotation
               type="underline"
-              color="#1e003d"
+              color="#f073ba"
               strokeWidth={3}
               order={1}
             >
@@ -23,7 +23,7 @@ export default function Home() {
             <span className="mx-2">and</span>
             <RoughNotation
               type="underline"
-              color="#1e003d"
+              color="#746ef3"
               strokeWidth={3}
               order={2}
             >
