@@ -1,10 +1,10 @@
-import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
 import Layout from "../components/Layout";
 import { Provider } from "next-auth/client";
 import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function DaalBeat({ Component, pageProps }: AppProps) {
   return (
     <Provider session={pageProps.session}>
       <Layout>
@@ -13,4 +13,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Provider>
   );
 }
-export default MyApp;
+export default DaalBeat;
