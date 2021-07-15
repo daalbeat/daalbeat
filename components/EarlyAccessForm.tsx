@@ -36,8 +36,9 @@ const EarlyAccessForm = () => {
             </button>
             <div
               id="lead-error-message-container"
-              className="text-xs mt-3 text-red-400"
+              className="text-xs mt-1 text-red-400"
             >
+              &nbsp;
               {errors.email?.type === "required" && "Email is required"}
             </div>
           </form>
