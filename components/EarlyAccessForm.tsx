@@ -1,8 +1,22 @@
 import React from "react";
 
 const EarlyAccessForm = () => {
-  const submitLead = async (event) => {
-    event.preventDefault();
+  const submitLead = async (e: React.SyntheticEvent) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/lead", {
+      body: JSON.stringify({
+        email: e.target.leadEmail.value,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const result = await res.json();
+    // result.user => 'Ada Lovelace'
+    console.log(result);
   };
 
   return (
@@ -16,11 +30,11 @@ const EarlyAccessForm = () => {
         </p>
         <div id="lead-form-card" className="mt-10">
           <form onSubmit={submitLead}>
-            <label htmlFor="email"></label>
+            <label htmlFor="leadEmail"></label>
             <input
               type="email"
-              name="email"
-              id="email"
+              name="leadEmail"
+              id="leadEmail"
               className="flex-1 rounded-none rounded-l-md py-2 px-3 focus:outline-none text-sm"
               placeholder="your@email.com"
             />
@@ -33,9 +47,7 @@ const EarlyAccessForm = () => {
             <div
               id="lead-error-message-container"
               className="text-sm mt-3 text-red-400"
-            >
-              Something went wrong...
-            </div>
+            ></div>
           </form>
         </div>
       </div>
