@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/client";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import EarlyAccess from "../components/EarlyAccess";
 
 export default function Home() {
   return (
@@ -32,6 +33,8 @@ export default function Home() {
           </RoughNotationGroup>
         </p>
       </div>
+
+      <EarlyAccess />
     </div>
   );
 }
