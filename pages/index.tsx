@@ -5,7 +5,7 @@ import EarlyAccess from "../components/EarlyAccess";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center min-h-screen">
+    <div className="flex flex-col justify-center min-h-screen m-1">
       <div className="text-center mx-auto">
         <span className="text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work text-5xl font-extrabold">
           DaalBeat
