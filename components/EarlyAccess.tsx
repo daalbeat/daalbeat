@@ -3,6 +3,8 @@ import React from "react";
 const EarlyAccess = () => {
   const submitLead = async (event) => {
     event.preventDefault();
+
+    alert("Hello World");
   };
 
   return (
@@ -18,7 +20,7 @@ const EarlyAccess = () => {
           <form onSubmit={submitLead}>
             <label htmlFor="email"></label>
             <input
-              type="text"
+              type="email"
               name="email"
               id="email"
               className="flex-1 rounded-none rounded-l-md py-2 px-3 focus:outline-none text-sm"
@@ -30,6 +32,12 @@ const EarlyAccess = () => {
             >
               Submit
             </button>
+            <div
+              id="lead-error-message-container"
+              className="text-sm mt-3 text-red-400"
+            >
+              Something went wrong...
+            </div>
           </form>
         </div>
       </div>
