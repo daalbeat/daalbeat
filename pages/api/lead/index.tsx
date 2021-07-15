@@ -7,7 +7,7 @@ export default async function handle(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const result = await prisma.earlyAccessLeads.create({
+    await prisma.lead.create({
       data: {
         email: req.body.email,
       },

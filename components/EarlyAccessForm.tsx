@@ -21,10 +21,10 @@ const EarlyAccessForm = () => {
   return (
     <section className="mt-20 text-center flex justify-center m-5">
       <div className="bg-gray-100 p-10 rounded border border-gray-200 shadow-sm">
-        <span className="font-extrabold text-xl text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work">
+        <span className="font-extrabold text-2xl text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work">
           Waiting List
         </span>
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-sm mt-2">
           You’ll be one of the first to get early access.
         </p>
         <div id="lead-form-card" className="mt-10">
