@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 const EarlyAccessForm = () => {
+  const [email, setEmail] = useState("");
+
   const submitLead = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
+    const body = { email };
     const res = await fetch("/api/lead", {
-      body: JSON.stringify({
-        email: e.target.leadEmail.value,
-      }),
+      body: JSON.stringify(body),
       headers: {
         "Content-Type": "application/json",
       },
@@ -28,11 +29,13 @@ const EarlyAccessForm = () => {
         </p>
         <div id="lead-form-card" className="mt-10">
           <form onSubmit={submitLead}>
-            <label htmlFor="leadEmail"></label>
+            <label htmlFor="email"></label>
             <input
               type="email"
-              name="leadEmail"
-              id="leadEmail"
+              name="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="flex-1 rounded-none rounded-l-md py-2 px-3 focus:outline-none text-sm"
               placeholder="your@email.com"
             />
