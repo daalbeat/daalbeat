@@ -8,7 +8,16 @@ const EarlyAccessForm = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  async function onSubmit(value) {
+    const res = await fetch("api/lead", {
+      body: JSON.stringify(value),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+  }
 
   return (
     <section className="mt-20 text-center flex justify-center m-5">
