@@ -10,13 +10,19 @@ const EarlyAccessForm = () => {
   } = useForm();
 
   async function onSubmit(value) {
-    const res = await fetch("api/lead", {
-      body: JSON.stringify(value),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
+    try {
+      const res = await fetch("api/lead", {
+        body: JSON.stringify(value),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      if (res.status == 200) {
+        reset();
+      }
+    } catch (err) {}
   }
 
   return (
