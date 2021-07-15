@@ -1,22 +1,9 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 
 const EarlyAccessForm = () => {
-  const [email, setEmail] = useState("");
-
-  const submitLead = async (e: React.SyntheticEvent) => {
-    e.preventDefault();
-
-    const body = { email };
-    const res = await fetch("/api/lead", {
-      body: JSON.stringify(body),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
-
-    const result = await res.json();
-  };
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (data) => console.log(data);
 
   return (
     <section className="mt-20 text-center flex justify-center m-5">
@@ -28,14 +15,10 @@ const EarlyAccessForm = () => {
           You’ll be one of the first to get early access.
         </p>
         <div id="lead-form-card" className="mt-10">
-          <form onSubmit={submitLead}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="email"></label>
             <input
-              type="email"
-              name="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              {...register("email")}
               className="flex-1 rounded-none rounded-l-md py-2 px-3 focus:outline-none text-sm"
               placeholder="your@email.com"
             />
