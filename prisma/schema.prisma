@@ -15,3 +15,11 @@ model User {
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
   @@map(name: "users")
 }
+
+model Lead {
+  id            Int       @default(autoincrement()) @id
+  email         String    @unique
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
+  @@map(name: "leads")
+}
