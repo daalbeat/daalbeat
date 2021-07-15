@@ -15,8 +15,6 @@ const EarlyAccessForm = () => {
     });
 
     const result = await res.json();
-    // result.user => 'Ada Lovelace'
-    console.log(result);
   };
 
   return (
