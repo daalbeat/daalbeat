@@ -3,18 +3,6 @@ import React from "react";
 const EarlyAccess = () => {
   const submitLead = async (event) => {
     event.preventDefault();
-
-    const res = await fetch("/api/lead", {
-      body: JSON.stringify({
-        email: event.target.email.value,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
-
-    const result = await res.json();
   };
 
   return (
