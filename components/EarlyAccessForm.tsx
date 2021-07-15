@@ -1,14 +1,12 @@
 import React from "react";
 
-const EarlyAccess = () => {
+const EarlyAccessForm = () => {
   const submitLead = async (event) => {
     event.preventDefault();
-
-    alert("Hello World");
   };
 
   return (
-    <section className="mt-20 text-center flex flex-row justify-center m-5">
+    <section className="mt-20 text-center flex justify-center m-5">
       <div className="bg-gray-100 p-10 rounded border border-gray-200 shadow-sm">
         <span className="font-extrabold text-xl text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work">
           Waiting List
@@ -45,4 +43,4 @@ const EarlyAccess = () => {
   );
 };
 
-export default EarlyAccess;
+export default EarlyAccessForm;

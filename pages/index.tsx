@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/client";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import EarlyAccess from "../components/EarlyAccess";
+import EarlyAccessForm from "../components/EarlyAccessForm";
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
         </p>
       </div>
 
-      <EarlyAccess />
+      <EarlyAccessForm />
     </div>
   );
 }
