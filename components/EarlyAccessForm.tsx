@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const EarlyAccessForm = () => {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
   const onSubmit = (data) => console.log(data);
 
   return (
@@ -18,7 +23,8 @@ const EarlyAccessForm = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="email"></label>
             <input
-              {...register("email")}
+              {...register("email", { required: true })}
+              type="email"
               className="flex-1 rounded-none rounded-l-md py-2 px-3 focus:outline-none text-sm"
               placeholder="your@email.com"
             />
@@ -30,8 +36,10 @@ const EarlyAccessForm = () => {
             </button>
             <div
               id="lead-error-message-container"
-              className="text-sm mt-3 text-red-400"
-            ></div>
+              className="text-xs mt-3 text-red-400"
+            >
+              {errors.email?.type === "required" && "Email is required"}
+            </div>
           </form>
         </div>
       </div>
