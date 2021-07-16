@@ -9,7 +9,7 @@ export default function Home() {
       <div className="text-center mx-auto">
         <span className="font-work text-4xl font-extrabold">DAALBEAT</span>
         <p className="font-work text-lg text-gray-500 text-center mt-3">
-          <span className="mr-2">Healthcare pricing</span>
+          <span className="mr-2">Healthcare marketplace</span>
           <RoughNotationGroup show={true}>
             <RoughNotation
               type="underline"
