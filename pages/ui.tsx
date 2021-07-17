@@ -5,7 +5,7 @@ import Cards from "../components/ui/Cards";
 const UI = () => {
   return (
     <>
-      <div className="p-10">
+      <div className="p-5">
         <Columns />
         <Cards />
       </div>
