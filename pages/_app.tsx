@@ -8,7 +8,7 @@ function DaalBeat({ Component, pageProps }: AppProps) {
   return (
     <Provider session={pageProps.session}>
       <Layout>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </Layout>
     </Provider>
   );
