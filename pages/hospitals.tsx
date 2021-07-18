@@ -3,6 +3,7 @@ import prisma from "./../lib/prisma";
 import useSWR from "swr";
 import fetch from "unfetch";
 import { useSession } from "next-auth/client";
+import * as d3 from "d3";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
