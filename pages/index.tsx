@@ -15,7 +15,7 @@ export default function Home() {
             strokeWidth={3}
             show={true}
           >
-            Price transparency healthcare marketplace.
+            Healthcare price transparency marketplace.
           </RoughNotation>
         </p>
       </div>
