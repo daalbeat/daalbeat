@@ -6,8 +6,8 @@ export default async function handle(
   res: NextApiResponse
 ) {
   const hospitals = await prisma.hospital.findMany({
-    skip: 100,
-    take: 500,
+    skip: 0,
+    take: 100,
   });
   res.status(200).json(hospitals);
 }
