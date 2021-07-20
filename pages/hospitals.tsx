@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import prisma from "./../lib/prisma";
 import useSWR from "swr";
 import fetch from "unfetch";
 import { useSession } from "next-auth/client";
 import * as d3 from "d3";
+import DaalBeatLogo from "../public/daalbeat.png";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
@@ -19,7 +21,14 @@ const Hospitals = () => {
     <>
       <div className="bg-white p-5 fixed t-0 w-full filter drop-shadow">
         <Link href="/">
-          <a>DaalBeat</a>
+          <a>
+            <Image
+              src={DaalBeatLogo}
+              width={30}
+              height={34}
+              alt="DaalBeat Logo"
+            />
+          </a>
         </Link>
       </div>
 
