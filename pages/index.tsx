@@ -13,7 +13,7 @@ export default function Home() {
         <p className="font-work text-lg text-gray-500 text-center">
           <RoughNotation
             type="underline"
-            color="#f073ba"
+            color="#450069"
             strokeWidth={3}
             show={true}
           >
