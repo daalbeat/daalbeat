@@ -4,6 +4,7 @@ import { signIn, signOut, useSession } from "next-auth/client";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import EarlyAccessForm from "../components/EarlyAccessForm";
 import DaalBeatLogo from "../public/DaalBeatLogo.png";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           </RoughNotation>
         </p>
       </div>
-
+      <Services />
       <EarlyAccessForm />
     </div>
   );
