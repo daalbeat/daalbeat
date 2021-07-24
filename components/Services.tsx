@@ -90,7 +90,7 @@ function Services() {
             </svg>
           </div>
           <div>
-            <span className="font-bold">Fundraise for medical needs</span>
+            <span className="font-bold">Fundraise for Medical Needs</span>
             <p className="text-sm text-gray-400">
               Get help from friends and family
             </p>
