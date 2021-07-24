@@ -9,7 +9,7 @@ import Services from "../components/Services";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center min-h-screen m-1">
-      <div className="text-center mx-auto">
+      <div className="text-center mx-auto mt-10 md:mt-0">
         <Image src={DaalBeatLogo} alt="DaalBeat Logo" width={300} height={53} />
         <p className="font-work text-lg text-gray-500 text-center">
           <RoughNotation
