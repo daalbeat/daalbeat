@@ -1,11 +1,13 @@
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+    url      = env("DATABASE_URL")
 }
 
 generator client {
   provider = "prisma-client-js"
 }
+
+// All the models, alphabatically ordered
 
 model User {
   id                      Int       @default(autoincrement()) @id
@@ -17,12 +19,36 @@ model User {
   @@map(name: "users")
 }
 
-model Lead {
+model Customer {
   id                      Int       @default(autoincrement()) @id
-  email                   String    @unique
+  stripeCustomerId        String    @unique
+  name                    String
+  billingStreet           String
+  billingCity             String
+  billingPostalCode       String
+  billingState            String
+  billingCountry          String
   createdAt               DateTime  @default(now()) @map(name: "created_at")
   updatedAt               DateTime  @updatedAt @map(name: "updated_at")
-  @@map(name: "leads")
+  @@map(name: "customers")
+}
+
+model Fundraiser {
+  id                      Int       @default(autoincrement()) @id
+  title                   String
+  goalAmount              String
+  description             String
+  coverPhoto              String
+  slug                    String    @unique
+  shortLink               String
+  status                  String
+  published               Boolean   @default(false)
+  uuid                    String    @unique
+  user                    User      @relation(fields: [userId], references: [id])
+  userId                  Int
+  createdAt               DateTime  @default(now()) @map(name: "created_at")
+  updatedAt               DateTime  @updatedAt @map(name: "updated_at")
+  @@map(name: "fundraisers")
 }
 
 model Hospital {
@@ -45,18 +71,10 @@ model Hospital {
   @@map(name: "hospitals")
 }
 
-model Fundraiser {
+model Lead {
   id                      Int       @default(autoincrement()) @id
-  title                   String
-  goalAmount              String
-  description             String
-  coverPhoto              String
-  slug                    String    @unique
-  shortLink               String
-  status                  String
-  published               Boolean   @default(false)
-  uuid                    String    @unique
-  user                    User      @relation(fields: [userId], references: [id])
-  userId                  Int
-  @@map(name: "fundraisers")
+  email                   String    @unique
+  createdAt               DateTime  @default(now()) @map(name: "created_at")
+  updatedAt               DateTime  @updatedAt @map(name: "updated_at")
+  @@map(name: "leads")
 }
