@@ -8,7 +8,7 @@ const Layout = ({ children }: any) => {
         <title>DaalBeat</title>
         <meta
           name="description"
-          content="Healthcare pricing transparent and simplified."
+          content="Web3 Blockchain Healthcare toolkit for patients."
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
