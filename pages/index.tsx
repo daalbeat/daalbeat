@@ -18,7 +18,7 @@ export default function Home() {
             strokeWidth={3}
             show={true}
           >
-            Healthcare toolkit for patients.
+            Web3 Blockchain Healthcare toolkit for patients.
           </RoughNotation>
         </p>
       </div>
