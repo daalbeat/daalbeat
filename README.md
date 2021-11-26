@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src="https://luna.nyc3.cdn.digitaloceanspaces.com/daalbeat/DaalBeatLogo.png">
+  <img src="https://luna.nyc3.cdn.digitaloceanspaces.com/daalbeat/DaalBeatLogo.png" width=450>
   <h1 align='center'>DAALBEAT</h1>
 </p>
 
