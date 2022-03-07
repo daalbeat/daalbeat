@@ -18,7 +18,7 @@ export default function Home() {
             strokeWidth={3}
             show={true}
           >
-            Web3 Blockchain Healthcare toolkit for patients.
+            DAO for healthcare emergency fund.
           </RoughNotation>
         </p>
       </div>
