@@ -1,5 +1,4 @@
 import Head from "next/head";
-import HelpScout from "./HelpScout";
 
 const Layout = ({ children }: any) => {
   return (

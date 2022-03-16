@@ -1,12 +1,12 @@
 function Services() {
   return (
     <div className="mx-10 mt-20">
-      <div className="container mx-auto flex md:flex-row flex-col justify-evenly">
-        <div className="flex flex-column py-5">
-          <div className="mr-5 self-center bg-pink-50 rounded-full p-3">
+      <div className="container flex flex-col mx-auto md:flex-row justify-evenly">
+        <div className="flex py-5 flex-column">
+          <div className="self-center p-3 mr-5 rounded-full bg-pink-50">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-pink-500"
+              className="w-6 h-6 text-pink-500"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -21,10 +21,10 @@ function Services() {
           </div>
           <div>
             <span className="font-bold">
-              Fundraise Crypto for Medical Needs
+              Create a DAO with friends and family
             </span>
             <p className="text-sm text-gray-400">
-              Get help from friends and family
+              Secure healthcare emergency funds together.
             </p>
           </div>
         </div>
