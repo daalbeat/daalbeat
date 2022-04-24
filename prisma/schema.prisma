@@ -1,10 +1,12 @@
-datasource db {
-  provider = "mysql"
-    url      = env("DATABASE_URL")
-}
-
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
 }
 
 // All the models, alphabatically ordered
@@ -13,62 +15,9 @@ model User {
   id                      Int       @default(autoincrement()) @id
   name                    String
   email                   String    @unique
-  fundraisers             Fundraiser[]
   createdAt               DateTime  @default(now()) @map(name: "created_at")
   updatedAt               DateTime  @updatedAt @map(name: "updated_at")
   @@map(name: "users")
-}
-
-model Customer {
-  id                      Int       @default(autoincrement()) @id
-  stripeCustomerId        String    @unique
-  name                    String
-  billingStreet           String
-  billingCity             String
-  billingPostalCode       String
-  billingState            String
-  billingCountry          String
-  createdAt               DateTime  @default(now()) @map(name: "created_at")
-  updatedAt               DateTime  @updatedAt @map(name: "updated_at")
-  @@map(name: "customers")
-}
-
-model Fundraiser {
-  id                      Int       @default(autoincrement()) @id
-  title                   String
-  goalAmount              String
-  description             String
-  coverPhoto              String
-  slug                    String    @unique
-  shortLink               String
-  status                  String
-  published               Boolean   @default(false)
-  uuid                    String    @unique
-  user                    User      @relation(fields: [userId], references: [id])
-  userId                  Int
-  createdAt               DateTime  @default(now()) @map(name: "created_at")
-  updatedAt               DateTime  @updatedAt @map(name: "updated_at")
-  @@map(name: "fundraisers")
-}
-
-model Hospital {
-  id                      Int       @default(autoincrement()) @id
-  facilityId              String    @unique
-  facilityName            String
-  address                 String
-  city                    String
-  state                   String
-  zipcode                 String
-  countyName              String
-  phoneNumber             String
-  hospitalType            String
-  hospitalOwnership       String
-  emergencyServices       String
-  interoperabilityEHR     String?
-  hospitalOverallRating   String?
-  createdAt               DateTime  @default(now()) @map(name: "created_at")
-  updatedAt               DateTime  @updatedAt @map(name: "updated_at")
-  @@map(name: "hospitals")
 }
 
 model Lead {
