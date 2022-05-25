@@ -1,8 +1,6 @@
 // NextJS
 import Head from "next/head";
 import Image from "next/image";
-import { signIn, signOut, useSession } from "next-auth/client";
-
 // React
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
