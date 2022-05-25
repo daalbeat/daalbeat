@@ -14,7 +14,6 @@ import {
   configureChains,
   getDefaultWallets,
   RainbowKitProvider,
-  ConnectButton,
 } from "@rainbow-me/rainbowkit";
 import { chain, createClient, WagmiProvider } from "wagmi";
 
@@ -24,7 +23,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "DaalBeat",
   chains,
 });
 
