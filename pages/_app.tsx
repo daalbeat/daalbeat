@@ -1,16 +1,47 @@
+// Styles
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
+
+// NextJS
 import Layout from "../components/Layout";
-import { Provider } from "next-auth/client";
 import type { AppProps } from "next/app";
+
+// React
+import "@rainbow-me/rainbowkit/styles.css";
+
+import {
+  apiProvider,
+  configureChains,
+  getDefaultWallets,
+  RainbowKitProvider,
+} from "@rainbow-me/rainbowkit";
+import { chain, createClient, WagmiProvider } from "wagmi";
+
+const { chains, provider } = configureChains(
+  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+  [apiProvider.alchemy(process.env.ALCHEMY_ID), apiProvider.fallback()]
+);
+
+const { connectors } = getDefaultWallets({
+  appName: "DaalBeat",
+  chains,
+});
+
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors,
+  provider,
+});
 
 function DaalBeat({ Component, pageProps }: AppProps) {
   return (
-    <Provider session={pageProps.session}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </Provider>
+    <WagmiProvider client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RainbowKitProvider>
+    </WagmiProvider>
   );
 }
 export default DaalBeat;
