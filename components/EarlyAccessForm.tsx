@@ -40,40 +40,47 @@ const EarlyAccessForm = () => {
   }
 
   return (
-    <section className="mt-20 text-center flex justify-center m-5">
-      <div className="bg-gray-100 p-10 rounded border border-gray-200 shadow-sm">
-        <div className="font-extrabold text-2xl text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work mt-3">
-          Waiting List
-        </div>
-        <p className="text-gray-500 text-sm mt-2">
-          You’ll be one of the first to get early access.
-        </p>
-        <div id="lead-form-card" className="mt-10">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="email"></label>
-            <input
-              {...register("email", { required: true })}
-              type="email"
-              className="flex-1 rounded-none rounded-l-md py-2 px-3 focus:outline-none text-sm"
-              placeholder="your@email.com"
-            />
-            <button
-              className="bg-blue-100 hover:bg-blue-200 px-3 py-2 transition duration-500 ease-in-out rounded-none rounded-r-md focus:ring font-extrabold uppercase text-sm"
-              type="submit"
-            >
-              Submit
-            </button>
-            <div
-              id="lead-status-message-container"
-              className="text-xs mt-2 text-red-400"
-            >
-              &nbsp;
-              {errors.email?.type === "required" && "Email is required"}
-            </div>
-          </form>
+    <>
+      <div className="px-2 text-center mt-14">
+        <small className="font-bold text-gray-700">
+          We are building the new healthcare emergency fund!
+        </small>
+      </div>
+      <div className="flex justify-center m-5 text-center">
+        <div className="p-10 bg-gray-100 border border-gray-200 rounded shadow-sm">
+          <div className="mt-3 text-2xl font-extrabold text-gradient bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 font-work">
+            Waiting List
+          </div>
+          <p className="mt-2 text-sm text-gray-500">
+            You’ll be one of the first to get early access.
+          </p>
+          <div id="lead-form-card" className="mt-10">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <label htmlFor="email"></label>
+              <input
+                {...register("email", { required: true })}
+                type="email"
+                className="flex-1 px-3 py-2 text-sm rounded-none rounded-l-md focus:outline-none"
+                placeholder="your@email.com"
+              />
+              <button
+                className="px-3 py-2 text-sm font-extrabold uppercase transition duration-500 ease-in-out bg-blue-100 rounded-none hover:bg-blue-200 rounded-r-md focus:ring"
+                type="submit"
+              >
+                Submit
+              </button>
+              <div
+                id="lead-status-message-container"
+                className="mt-2 text-xs text-red-400"
+              >
+                &nbsp;
+                {errors.email?.type === "required" && "Email is required"}
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 
