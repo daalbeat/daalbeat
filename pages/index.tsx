@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 // React
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { useAccount } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
@@ -25,14 +24,7 @@ export default function Home() {
             height={53}
           />
           <p className="text-lg text-center text-gray-500 font-work">
-            <RoughNotation
-              type="underline"
-              color="#450069"
-              strokeWidth={3}
-              show={true}
-            >
-              DAO for healthcare emergency fund.
-            </RoughNotation>
+            DAO for healthcare emergency fund.
           </p>
         </div>
         <Services />
