@@ -49,14 +49,7 @@ export default function Home() {
       <div className="mx-auto mt-10 text-center md:mt-0">
         <Image src={DaalBeatLogo} alt="DaalBeat Logo" width={300} height={53} />
         <p className="text-lg text-center text-gray-500 font-work">
-          <RoughNotation
-            type="underline"
-            color="#450069"
-            strokeWidth={3}
-            show={true}
-          >
-            DAO for healthcare emergency fund.
-          </RoughNotation>
+          DAO for healthcare emergency fund.
         </p>
       </div>
       <Services />
