@@ -1,6 +1,5 @@
 // NextJS
 import Image from "next/image";
-import Link from "next/link";
 
 // React
 import { useAccount } from "wagmi";
@@ -10,6 +9,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import EarlyAccessForm from "../components/EarlyAccessForm";
 import DaalBeatLogo from "../public/DaalBeatLogo.png";
 import Services from "../components/Services";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const { data } = useAccount();
@@ -33,16 +33,7 @@ export default function Home() {
           <ConnectButton />
         </div>
         <EarlyAccessForm />
-        <div className="mt-4 text-center text-gray-400">
-          <small>
-            <span className="mr-1">Built by</span> 🌙
-            <span className="ml-3">
-              <Link href="https://twitter.com/sicktastic">
-                <a className="hover:text-gray-700">Sicktastic</a>
-              </Link>
-            </span>
-          </small>
-        </div>
+        <Footer />
       </div>
     );
   return (
@@ -57,16 +48,7 @@ export default function Home() {
       <div className="mx-auto mt-10 text-center">
         <ConnectButton />
       </div>
-      <div className="mt-20 text-center text-gray-400">
-        <small>
-          <span className="mr-1">Built by</span> 🌙
-          <span className="ml-3">
-            <Link href="https://twitter.com/sicktastic">
-              <a className="hover:text-gray-700">Sicktastic</a>
-            </Link>
-          </span>
-        </small>
-      </div>
+      <Footer />
     </div>
   );
 }
