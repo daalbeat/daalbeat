@@ -1,8 +1,10 @@
+import Blog from "../components/Blog";
+
 function Services() {
   return (
-    <div className="mx-10 mt-20">
+    <div className="mx-10 mt-10">
       <div className="container flex flex-col mx-auto md:flex-row justify-evenly">
-        <div className="flex py-5 flex-column">
+        <div className="flex py-5 mx-auto flex-column">
           <div className="self-center p-3 mr-5 rounded-full bg-pink-50">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +30,9 @@ function Services() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="container w-4/5 mx-auto md:w-1/2">
+        <Blog />
       </div>
     </div>
   );
