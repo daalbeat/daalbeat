@@ -9,10 +9,8 @@ const Layout = ({ children }: any) => {
     <>
       <Head>
         <title>DaalBeat</title>
-        <meta
-          name="description"
-          content="Web3 Blockchain Healthcare toolkit for patients."
-        />
+        <meta name="description" content="DAO for healthcare emergency fund." />
+        <meta name="keywords" content="DAO for healthcare, healthcare dao" />
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
           rel="stylesheet"
