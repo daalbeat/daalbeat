@@ -41,7 +41,7 @@ export default function Home() {
       <div className="mx-auto mt-10 text-center md:mt-0">
         <Image src={DaalBeatLogo} alt="DaalBeat Logo" width={300} height={53} />
         <p className="text-lg text-center text-gray-500 font-work">
-          DAO for healthcare emergency fund.
+          Healthcare toolkit on blockchain.
         </p>
       </div>
       <Services />
