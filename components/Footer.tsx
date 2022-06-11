@@ -2,7 +2,8 @@
 import Link from "next/link";
 
 // ReactJS
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiBook } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 export default function Footer() {
   return (
@@ -22,6 +23,16 @@ export default function Footer() {
           <Link href="https://github.com/daalbeat">
             <a>
               <FiGithub className="hover:text-gray-700" />
+            </a>
+          </Link>
+          <Link href="https://docs.daalbeat.com">
+            <a className="ml-4">
+              <FiBook className="hover:text-gray-700" />
+            </a>
+          </Link>
+          <Link href="https://discord.gg/wgv22BAQDu">
+            <a className="ml-4">
+              <TbBrandDiscord className="hover:text-gray-700" />
             </a>
           </Link>
         </div>
