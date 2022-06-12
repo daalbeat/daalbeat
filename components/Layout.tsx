@@ -24,7 +24,7 @@ const Layout = ({ children }: any) => {
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://tally.so/widgets/embed.js"></script>
       </Head>
-      <div className="flex justify-center mt-8 -mb-20">
+      <div className="flex justify-center mt-8">
         <Link href="https://github.com/daalbeat">
           <a className="flex text-gray-500 hover:text-gray-700">
             <FiGithub className="mt-1 mr-2" />
