@@ -24,28 +24,7 @@ const Layout = ({ children }: any) => {
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://tally.so/widgets/embed.js"></script>
       </Head>
-      <div className="flex justify-center mt-8">
-        <Link href="https://github.com/daalbeat">
-          <a className="flex text-gray-500 hover:text-gray-700">
-            <FiGithub className="mt-1 mr-2" />
-            <div>Github</div>
-          </a>
-        </Link>
-        <Link href="https://docs.daalbeat.com">
-          <a className="flex ml-6 text-gray-500 hover:text-gray-700">
-            <FiBook className="mt-1 mr-2" />
-            <div>Docs</div>
-          </a>
-        </Link>
-        <Link href="https://discord.gg/wgv22BAQDu">
-          <a className="flex ml-6 text-gray-500 hover:text-gray-700">
-            <TbBrandDiscord className="mt-1 mr-2" />
-            <div>Discord</div>
-          </a>
-        </Link>
-      </div>
       {children}
-      <TallyButton />
     </>
   );
 };
