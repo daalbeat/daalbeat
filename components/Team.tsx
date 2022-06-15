@@ -5,6 +5,7 @@ const people = [
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777826024-LFWDYAZVL3LJKEDWVDKT/anthony.jpg?format=1000w",
     bio: "Anthony is a mission-driven CFO and Software Engineer who is passionate about creating products that will make a positive impact.  He studied Computer Science at Georgia Tech.",
+    website: "https://anthonylee.io",
   },
   {
     name: "Chey Lee",
@@ -12,6 +13,7 @@ const people = [
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777851386-T9L7LKW5UXZHD75FWF2D/chey.jpg?format=1000w",
     bio: "Chey Lee is a strengths coach and photographer whose greatest joy is watching others pursue their dreams and explore their potential.",
+    website: "https://moonlytemedia.com",
   },
 ];
 
@@ -45,7 +47,10 @@ export default function Team() {
                         <p className="text-purple-900">{person.role}</p>
                       </div>
                       <div className="text-lg">
-                        <p className="text-gray-500">{person.bio}</p>
+                        <p className="mb-4 text-gray-500">{person.bio}</p>
+                        <small>
+                          <a href={person.website}>Learn More</a>
+                        </small>
                       </div>
                     </div>
                   </div>
