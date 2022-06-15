@@ -1,8 +1,16 @@
+// ReactJS
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <>
       <main className="px-4 mx-auto mt-16 max-w-7xl sm:mt-40">
-        <div className="text-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="text-center"
+        >
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
             <span className="block xl:inline">Healthcare Toolkit on the</span>{" "}
             <span className="block text-purple-900 xl:inline">Blockchain</span>
@@ -28,7 +36,7 @@ export default function Hero() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </main>
     </>
   );

@@ -1,3 +1,6 @@
+// React J
+import { motion } from "framer-motion";
+
 const people = [
   {
     name: "Anthony Lee",
@@ -26,7 +29,10 @@ export default function Team() {
             Meet Our Team
           </h2>
 
-          <ul
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.8 }}
             role="list"
             className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0"
           >
@@ -57,7 +63,7 @@ export default function Team() {
                 </div>
               </li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </div>
     </div>

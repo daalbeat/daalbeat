@@ -1,6 +1,7 @@
 // ReactJS
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 
 export default function Newsletter() {
   const {
@@ -40,7 +41,12 @@ export default function Newsletter() {
     }
   }
   return (
-    <div className="pb-16 mt-20 bg-white sm:py-2">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.8 }}
+      className="pb-16 mt-20 bg-white sm:py-2"
+    >
       <div className="relative sm:py-16">
         <div aria-hidden="true" className="hidden sm:block">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
@@ -148,6 +154,6 @@ export default function Newsletter() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
