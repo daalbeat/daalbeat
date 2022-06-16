@@ -29,15 +29,17 @@ export default function Team() {
             Meet Our Team
           </h2>
 
-          <motion.ul
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.8 }}
+          <ul
             role="list"
             className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0"
           >
             {people.map((person) => (
-              <li key={person.name}>
+              <motion.li
+                key={person.name}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.8 }}
+              >
                 <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                   <div className="h-0 aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
                     <img
@@ -61,9 +63,9 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
-              </li>
+              </motion.li>
             ))}
-          </motion.ul>
+          </ul>
         </div>
       </div>
     </div>

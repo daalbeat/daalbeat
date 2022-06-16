@@ -146,7 +146,7 @@ export default function Newsletter() {
                     type="submit"
                     className="block w-full px-5 py-3 text-base font-medium text-white bg-indigo-500 border border-transparent rounded-md shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-900 sm:px-10"
                   >
-                    Notify me
+                    Join Waitlist
                   </button>
                 </div>
               </form>
