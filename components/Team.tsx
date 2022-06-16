@@ -15,7 +15,7 @@ const people = [
     role: "Co-Founder",
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777851386-T9L7LKW5UXZHD75FWF2D/chey.jpg?format=1000w",
-    bio: "Chey Lee is a strengths coach and photographer whose greatest joy is watching others pursue their dreams and explore their potential.",
+    bio: "Dedicated copywriter with over a decade of experience developing and producing dynamic content and marketing strategies.",
     website: "https://moonlytemedia.com",
   },
 ];
