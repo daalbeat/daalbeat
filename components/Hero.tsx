@@ -16,7 +16,7 @@ export default function Hero() {
             <span className="block text-purple-900 xl:inline">Blockchain</span>
           </h1>
           <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Healthcare platform on blockchain.
+            Building the new healthcare infrastructure.
           </p>
           <div className="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
