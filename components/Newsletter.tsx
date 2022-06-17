@@ -114,7 +114,7 @@ export default function Newsletter() {
                   Get notified when we&rsquo;re launching.
                 </h2>
                 <p className="max-w-2xl mx-auto mt-6 text-lg text-indigo-200">
-                  We are building the new healthcare emergency fund!
+                  We are building the new healthcare toolkit on blockchain.
                 </p>
               </div>
 
