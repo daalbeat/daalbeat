@@ -4,7 +4,7 @@ import Hero from "../public/hero.jpg";
 
 export default function HeroImage() {
   return (
-    <div className="px-20 mt-40">
+    <div className="px-4 mt-20 lg:mt-40 lg:px-20">
       <div className="mx-auto rounded-lg md:container">
         <Image
           src={Hero}
