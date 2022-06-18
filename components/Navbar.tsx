@@ -116,12 +116,6 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-                <a
-                  href="#join-waitlist"
-                  className="block w-full px-5 py-3 font-medium text-center text-purple-900 bg-gray-50 hover:bg-gray-100"
-                >
-                  Join Waitlist
-                </a>
               </div>
             </Popover.Panel>
           </Transition>

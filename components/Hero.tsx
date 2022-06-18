@@ -16,7 +16,8 @@ export default function Hero() {
             <span className="block text-purple-900 xl:inline">Blockchain</span>
           </h1>
           <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Building the new healthcare infrastructure.
+            New emergency funding, pricing transparency, open API, secure
+            identity.
           </p>
           <div className="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
@@ -32,7 +33,7 @@ export default function Hero() {
                 href="https://discord.gg/wgv22BAQDu"
                 className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-purple-900 bg-white border border-transparent border-gray-200 rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
               >
-                Join Community
+                Discord
               </a>
             </div>
           </div>
