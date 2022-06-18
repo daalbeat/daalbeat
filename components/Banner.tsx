@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Hero from "../public/hero.jpg";
 
-export default function Example() {
+export default function HeroImage() {
   return (
     <div className="px-20 mt-40">
       <div className="mx-auto rounded-lg md:container">
