@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 // ReactJS
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
@@ -62,10 +62,10 @@ export default function Navbar() {
               <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <a
-                    href="#"
+                    href="#join-waitlist"
                     className="inline-flex items-center px-4 py-2 text-base font-medium text-purple-900 bg-white border border-gray-200 rounded-md hover:bg-gray-50"
                   >
-                    Launch App (Soon)
+                    Join Waitlist
                   </a>
                 </span>
               </div>
@@ -113,10 +113,10 @@ export default function Navbar() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="#join-waitlist"
                   className="block w-full px-5 py-3 font-medium text-center text-purple-900 bg-gray-50 hover:bg-gray-100"
                 >
-                  Launch App (Soon)
+                  Join Waitlist
                 </a>
               </div>
             </Popover.Panel>
