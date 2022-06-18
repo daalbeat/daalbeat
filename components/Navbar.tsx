@@ -16,6 +16,7 @@ const navigation = [
     name: "White Paper",
     href: "https://docs.google.com/document/d/1mDc95O6c_-btTEsCr1hs1W5-eMEHwI9Pb9eaI-y0BKs/edit?usp=sharing",
   },
+  { name: "Team", href: "#team" },
   { name: "Discord", href: "https://discord.gg/wgv22BAQDu" },
 ];
 

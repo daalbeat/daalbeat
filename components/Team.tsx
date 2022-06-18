@@ -30,6 +30,7 @@ export default function Team() {
           </h2>
 
           <ul
+            id="team"
             role="list"
             className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0"
           >
