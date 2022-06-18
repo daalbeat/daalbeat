@@ -11,7 +11,7 @@ const features = [
   {
     name: "Blockchain",
     description:
-      "A Public ledger of transactions where data is immutable and transparent.",
+      "A public ledger of transactions where data is immutable and transparent.",
     icon: CubeIcon,
   },
   {
