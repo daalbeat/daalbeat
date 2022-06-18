@@ -7,6 +7,7 @@ import type { AppProps } from "next/app";
 
 // React
 import "@rainbow-me/rainbowkit/styles.css";
+import { useRef } from "react";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { configureChains, chain, createClient, WagmiConfig } from "wagmi";
@@ -15,6 +16,7 @@ import { configureChains, chain, createClient, WagmiConfig } from "wagmi";
 import Navbar from "../components/Navbar";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
+import handle from "./api/lead";
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -33,9 +35,15 @@ const wagmiClient = createClient({
 });
 
 function DaalBeat({ Component, pageProps }: AppProps) {
+  const ref = useRef(null);
+
+  const handleJoinWaitlist = () => {
+    console.log("This is from the app");
+  };
+
   return (
     <Layout>
-      <Navbar />
+      <Navbar {...handleJoinWaitlist} />
       <Component {...pageProps} />
       <Footer />
     </Layout>
