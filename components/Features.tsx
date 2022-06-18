@@ -16,7 +16,8 @@ const features = [
   },
   {
     name: "Smart Contract",
-    description: "The infrastructure where we omit the intermediaries.",
+    description:
+      "The infrastructure where we omit the intermediaries. Own your own data.",
     icon: DocumentIcon,
   },
   {
