@@ -8,6 +8,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 // DaalBeat
 import DaalBeatLogo from "../public/DaalBeatLogo.png";
+import Hero from "./Hero";
 
 const navigation = [
   { name: "Docs", href: "https://docs.daalbeat.com" },
@@ -88,10 +89,12 @@ export default function Navbar() {
               <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
                 <div className="flex items-center justify-between px-5 pt-4">
                   <div>
-                    <img
+                    <Image
+                      src={DaalBeatLogo}
                       className="w-auto h-8"
-                      src="https://tailwindui.com/img/logos/workflow-mark-purple-900.svg"
-                      alt=""
+                      alt="DaalBeat"
+                      width={200}
+                      height={35}
                     />
                   </div>
                   <div className="-mr-2">
@@ -122,6 +125,7 @@ export default function Navbar() {
             </Popover.Panel>
           </Transition>
         </Popover>
+        <Hero />
       </div>
     </div>
   );
