@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
                 href="https://discord.gg/wgv22BAQDu"
-                className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-purple-900 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-purple-900 bg-white border border-transparent border-gray-200 rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
               >
                 Join Community
               </a>
