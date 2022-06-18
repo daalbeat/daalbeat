@@ -40,7 +40,7 @@ export default function Newsletter() {
     }
   }
   return (
-    <div className="pb-16 mt-20 bg-white sm:py-2">
+    <div className="pb-16 bg-white mt-18 sm:py-2">
       <div id="join-waitlist" className="relative sm:py-16">
         <div aria-hidden="true" className="hidden sm:block">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
