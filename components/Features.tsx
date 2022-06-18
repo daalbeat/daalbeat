@@ -1,4 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
+// ReactJS
+import { motion } from "framer-motion";
+
 import {
   DocumentIcon,
   CogIcon,
@@ -48,7 +50,12 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="relative py-16 bg-white sm:py-24 lg:py-32">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.8 }}
+      className="relative py-16 bg-white sm:py-24 lg:py-32"
+    >
       <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-base font-semibold tracking-wider text-purple-900 uppercase">
           Better Healthcare System
@@ -88,6 +95,6 @@ export default function Features() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
