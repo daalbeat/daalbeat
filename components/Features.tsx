@@ -27,9 +27,9 @@ const features = [
     icon: LibraryIcon,
   },
   {
-    name: "KYC",
+    name: "KYC and Identity",
     description:
-      "Know Your Customer for security and safey for members invovled.",
+      "Security and safety for all members involved in the ecosystem.",
     icon: ShieldCheckIcon,
   },
   {
