@@ -64,10 +64,10 @@ export default function Navbar() {
               <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <a
-                    href="#join-waitlist"
+                    href="https://app.daalbeat.com"
                     className="inline-flex items-center px-4 py-2 text-base font-medium text-purple-900 bg-white border border-gray-200 rounded-md hover:bg-gray-50"
                   >
-                    Join Waitlist
+                    Launch App
                   </a>
                 </span>
               </div>
