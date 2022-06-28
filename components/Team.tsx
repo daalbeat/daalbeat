@@ -7,7 +7,7 @@ const people = [
     role: "Co-Founder",
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777826024-LFWDYAZVL3LJKEDWVDKT/anthony.jpg?format=1000w",
-    bio: "Mission-driven CPO/CTO who is passionate about creating products that will make a positive impact.  He studied Computer Science at Georgia Tech.",
+    bio: "Mission-driven founder who is passionate about creating products that will make a positive impact.  He studied Computer Science at Georgia Tech.",
     website: "https://anthonylee.io",
   },
   {
