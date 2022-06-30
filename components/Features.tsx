@@ -9,18 +9,6 @@ import {
 
 const features = [
   {
-    name: "Blockchain",
-    description:
-      "A public ledger of transactions where data is immutable and transparent.",
-    icon: CubeIcon,
-  },
-  {
-    name: "Smart Contract",
-    description:
-      "The infrastructure where we omit the intermediaries. Own your own data.",
-    icon: DocumentIcon,
-  },
-  {
     name: "Micro DAO",
     description:
       "Decentralized autonomous organization where a group of people governs.",
@@ -37,12 +25,6 @@ const features = [
     description:
       "New emergency funding structure to cover maximum out-of-pocket costs.",
     icon: ChartBarIcon,
-  },
-  {
-    name: "Healthcare Open Pricing API",
-    description:
-      "Open source hospital pricing transparency for users and developers.",
-    icon: CogIcon,
   },
 ];
 
