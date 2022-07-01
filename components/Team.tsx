@@ -16,7 +16,7 @@ const people = [
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777851386-T9L7LKW5UXZHD75FWF2D/chey.jpg?format=1000w",
     bio: "Dedicated copywriter with over a decade of experience developing and producing dynamic content and marketing strategies.",
-    website: "#",
+    website: "https://cheylee.com",
   },
 ];
 
