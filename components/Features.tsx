@@ -36,12 +36,12 @@ export default function Features() {
           Blockchain Technology
         </h2>
         <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Rethinking Healthcare Infrastructure.
+          Rethinking Healthcare Funding.
         </p>
         <p className="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
-          Intermediaries in the healthcare industry are expensive and offer very
-          little value; we are here to change that. We are removing them from
-          the picture for good.
+          Healthcare costs are the number one cause of bankruptcy for American
+          families. Save up an emergency fund to cover the maximum out-of-pocket
+          costs with others.
         </p>
         <div className="mt-12">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
