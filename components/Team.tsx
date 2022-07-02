@@ -1,4 +1,7 @@
-// React J
+// NextJS
+import Image from "next/image";
+
+// ReactJS
 import { motion } from "framer-motion";
 
 const people = [
@@ -6,7 +9,7 @@ const people = [
     name: "Anthony Lee",
     role: "Founder",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777826024-LFWDYAZVL3LJKEDWVDKT/anthony.jpg?format=1000w",
+      "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777826024-LFWDYAZVL3LJKEDWVDKT/anthony.jpg?format=300w",
     bio: "Mission-driven founder who is passionate about creating products that will make a positive impact.  He studied Computer Science at Georgia Tech.",
     website: "https://anthonylee.io",
   },
@@ -14,7 +17,7 @@ const people = [
     name: "Chey Lee",
     role: "Communication Director",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777851386-T9L7LKW5UXZHD75FWF2D/chey.jpg?format=1000w",
+      "https://images.squarespace-cdn.com/content/v1/604ecd5312afe14e11219658/1615777851386-T9L7LKW5UXZHD75FWF2D/chey.jpg?format=300w",
     bio: "Dedicated copywriter with over a decade of experience developing and producing dynamic content and marketing strategies.",
     website: "https://cheylee.com",
   },
@@ -43,10 +46,13 @@ export default function Team() {
               >
                 <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                   <div className="h-0 aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
-                    <img
+                    <Image
                       className="object-cover rounded-lg shadow-lg"
                       src={person.imageUrl}
-                      alt=""
+                      layout="fill"
+                      alt={person.name}
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcunVTPQAG4AKdO7KTyQAAAABJRU5ErkJggg=="
                     />
                   </div>
                   <div className="sm:col-span-2">
