@@ -18,7 +18,6 @@ const navigation = [
   },
   { name: "Roadmap", href: "https://daalbeat.canny.io" },
   { name: "Team", href: "#team" },
-  { name: "Discord", href: "https://discord.gg/wgv22BAQDu" },
 ];
 
 export default function Navbar() {
