@@ -10,6 +10,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { configureChains, chain, createClient, WagmiConfig } from "wagmi";
+import LogRocket from "logrocket";
 
 // DaalBeat
 import Navbar from "../components/Navbar";
@@ -31,6 +32,8 @@ const wagmiClient = createClient({
   connectors,
   provider,
 });
+
+LogRocket.init("fo1lce/daalbeat");
 
 function DaalBeat({ Component, pageProps }: AppProps) {
   return (
