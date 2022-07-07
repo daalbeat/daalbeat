@@ -1,10 +1,3 @@
-// NextJS
-import Image from "next/image";
-
-// React
-import { useAccount } from "wagmi";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-
 // DaalBeat
 import Banner from "../components/Banner";
 import Features from "../components/Features";
